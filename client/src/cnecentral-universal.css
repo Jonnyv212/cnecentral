@@ -1,0 +1,231 @@
+body {
+  width: auto;
+  margin: 0 auto;
+  background-image: url(./imgs/homebg.jpg);
+}
+
+@media (min-width: 992px) {
+  body {
+  }
+}
+
+.page {
+  width: 1200px;
+  margin: auto;
+}
+.newHeader {
+  width: 1200px;
+  height: 254px;
+  /* height: 30%; */
+  float: left;
+  /* border-radius: 25px; */
+  /* position: relative; */
+  background-color: black;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  text-align: center;
+  border-radius: 25px;
+  border: groove;
+  border-color: purple;
+}
+
+.headerh1 {
+  /* width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0; */
+  display: block;
+}
+
+/*Navigation*/
+
+.navmenubar {
+  display: block;
+}
+
+.navmenuUL {
+  margin-left: 300px;
+  float: left;
+}
+
+.navmenuLI {
+  height: 30px;
+  width: 125px;
+  padding-top: 2px;
+  display: inline-block;
+  text-align: center;
+  background-color: white;
+  border: solid;
+  font-weight: bold;
+}
+
+.dropdown-item {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.sidebar {
+  width: 200px;
+  text-align: center;
+  float: left;
+  padding: 5px;
+  margin-left: 80px;
+}
+
+.sidebarContent {
+  width: 100%;
+  height: 100%;
+  padding: 2%;
+  /* background-color: #fff; */
+  display: block;
+}
+
+.sidebarButtons {
+  background-color: black;
+  height: 50px;
+  width: 160px;
+  color: rgb(122, 37, 122);
+  margin-bottom: 12px;
+  border: outset;
+  border-color: purple;
+  border-radius: 10px;
+}
+
+.mainContent {
+  width: 900px;
+  float: left;
+  margin-left: auto;
+  margin-right: 500px;
+  margin: 0 auto;
+}
+
+.contentEntry {
+  line-height: 18px;
+  padding: 3px 0;
+  overflow: hidden;
+}
+
+.subcontent {
+  font-family: "Helvetica";
+  float: left;
+  width: 32%;
+  margin-right: 12px;
+  background-color: white;
+  margin-top: 10px;
+}
+.subcontenttext {
+  height: 65px;
+  width: 100%;
+  margin-bottom: 4px;
+  margin-top: 4px;
+  margin-bottom: 24px;
+}
+
+.footer {
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  float: left;
+}
+
+.footer a {
+  margin-right: 14px;
+}
+
+/* nav a {
+  display: block;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: none;
+}
+
+.mainNav {
+  width: 100%;
+  list-style-type: none;
+  float: left;
+  text-align: center;
+}
+
+.mainNav li {
+  display: inline-block;
+  margin: 0 5%;
+}
+
+.mainNav a:hover {
+  text-decoration: none;
+}
+
+.seriesSubNav {
+  text-decoration: none;
+  position: relative;
+}
+
+.seriesDropdownContent {
+  width: 200px;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  text-align: center;
+} */
+
+/*
+.main {
+  width: 100%;
+  float: left;
+}
+*/
+
+/*footer*/
+/*
+.footer {
+  width: 100%;
+  padding: 1%;
+  float: left;
+}
+
+.footer p {
+  text-align: center;
+}
+
+.footerSocial {
+  text-align: center;
+}
+
+.footerSocial {
+  margin: 1% 0%;
+}
+/*Home Page Content*/
+/*
+.triContent {
+  width: 350px;
+  height: 550px;
+  margin: 1%;
+  background-color: #fff;
+  float: left;
+  display: inline-block;
+  text-align: center;
+}
+
+.triContentSub {
+  padding: 1%;
+}
+/*SPU*/
+
+/*Rize Requia*/
+
+/*Shop*/
+/*
+.container {
+  float: left;
+} */
