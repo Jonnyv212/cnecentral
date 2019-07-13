@@ -1,0 +1,21 @@
+[
+  {
+    "cne_logo": "https://cnecentral-assets.s3.ca-central-1.amazonaws.com/main+page/header/cne_logo.png",
+    "fb": "https://cnecentral-assets.s3.ca-central-1.amazonaws.com/main+page/footer/facebook-white.png",
+    "twitter": "https://cnecentral-assets.s3.ca-central-1.amazonaws.com/main+page/footer/twitter-white.png",
+    "instagram": "https://cnecentral-assets.s3.ca-central-1.amazonaws.com/main+page/footer/instagram-white.png",
+    "deviantart": "https://cnecentral-assets.s3.ca-central-1.amazonaws.com/main+page/footer/deviantart-white.png"
+  },
+  {
+    "homeTri1": "https://cnecentral-assets.s3.ca-central-1.amazonaws.com/main+page/content/homeTri1.jpg",
+    "homeTri2": "https://cnecentral-assets.s3.ca-central-1.amazonaws.com/main+page/content/homeTri2.jpg",
+    "homeTri3": "https://cnecentral-assets.s3.ca-central-1.amazonaws.com/main+page/content/homeTri3.jpg"
+  },
+  {
+    "rize": "https://cnecentral-assets.s3.ca-central-1.amazonaws.com/rizerequia/content/rize.jpg",
+    "requia": "https://cnecentral-assets.s3.ca-central-1.amazonaws.com/rizerequia/content/requia.jpg",
+    "damien": "https://cnecentral-assets.s3.ca-central-1.amazonaws.com/rizerequia/content/damien.jpg",
+    "hunter": "https://cnecentral-assets.s3.ca-central-1.amazonaws.com/rizerequia/content/hunter.jpg",
+    "kolt": "https://cnecentral-assets.s3.ca-central-1.amazonaws.com/rizerequia/content/kolt.jpg"
+  }
+]
