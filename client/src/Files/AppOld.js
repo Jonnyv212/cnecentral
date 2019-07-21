@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-import Banner from "./banner";
+import Banner from "../banner";
 import { Button } from "antd";
 import "antd/dist/antd.css";
 import { Layout, Menu, Breadcrumb, Icon } from "antd";

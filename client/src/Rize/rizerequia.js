@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import "./rr-design.css";
+import "./Rize.css";
 
 class Rize extends Component {
   render() {

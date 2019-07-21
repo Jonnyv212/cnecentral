@@ -2,11 +2,12 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import axios from "axios";
 import "./cnecentral-universal.css";
-import "antd/dist/antd.css";
+// import "antd/dist/antd.css";
 
-import Main from "./Main";
-import Rize from "./rizerequia";
+import Main from "./Main/Main.js";
+import Rize from "./Rize/rizerequia.js";
 import Construction from "./construction";
+import banner from "./Files/spr_banner.jpg";
 
 class App extends Component {
   constructor(props) {
@@ -39,105 +40,145 @@ class App extends Component {
     return image_data.join();
   };
 
-  Header = () => {
+  header = () => {
     return (
-      <header className="newHeader">
-        <img src={this.getImageURL("cne_logo")} alt="Logo" />
-        <h1 className="headerh1" style={{ color: "white" }}>
-          Crystal Nova Entertainment
-        </h1>
-      </header>
-    );
-  };
-
-  Nav = () => {
-    return (
-      <div className="navmenubar">
-        <ul class="navmenuUL">
-          <li className="navmenuLI">
-            <Link to="/main/">Home</Link>
-          </li>
-
-          <li className="navmenuLI">
-            <p>
-              Series List
-              <ul className="dropdown-content">
-                <p>Star Panic</p>
-                <p>Rize Requia</p>
-              </ul>
-            </p>
-          </li>
-
-          <li className="navmenuLI">
-            <p>Merch</p>
-          </li>
-
-          <li className="navmenuLI">
-            <p>Connect</p>
-          </li>
-        </ul>
+      <div className="header">
+        <div className="logo">
+          <img src={this.getImageURL("cne_logo")} alt="Logo" />
+        </div>
+        {this.navLeft()}
       </div>
     );
   };
 
-  Sidebar = () => {
+  navLeft = () => {
     return (
-      <div class="sidebar">
-        <div class="sidebarContent">
-          <h4 style={{ color: "white" }}>Series</h4>
-          <button className="sidebarButtons">
-            <Link to="/construction/"> Star Panic: Richi</Link>
-          </button>
+      <ul className="nav">
+        <li>
+          <Link to="/main/">Home</Link>
+        </li>
 
-          <button className="sidebarButtons">
-            <Link to="/rizerequia/"> Rize Requia</Link>
-          </button>
-        </div>
+        <li>Series List</li>
 
-        <div class="sidebarContent">
-          <h4 style={{ color: "white" }}>Affiliations</h4>
-          <button className="sidebarButtons" href="http://www.ableideaz.com/">
-            Able Ideaz
-          </button>
-          <button
-            className="sidebarButtons"
-            href="http://www.Instagram.com/kuribelle"
-          >
-            Instagram
-          </button>
-          <button className="sidebarButtons" href="http://www.ableideaz.com/">
-            Deviant Art
-          </button>
-          <button className="sidebarButtons" href="http://www.ableideaz.com/">
-            Twitter
-          </button>
-          <button className="sidebarButtons" href="http://www.ableideaz.com/">
-            Facebook
-          </button>
+        <li>Merch</li>
+
+        <li>Connect</li>
+      </ul>
+    );
+  };
+
+  navRight = () => {
+    return (
+      <ul className="nav">
+        <li>
+          <Link to="/main/">Home</Link>
+        </li>
+
+        <li>
+          <p>Series List</p>
+          {/* <ul className="dropdown-content">
+                  <p>Star Panic</p>
+                  <p>Rize Requia</p>
+                </ul> */}
+        </li>
+
+        <li>
+          <p>Merch</p>
+        </li>
+
+        <li>
+          <p>Connect</p>
+        </li>
+      </ul>
+    );
+  };
+
+  banner = () => {
+    return (
+      <div className="banner">
+        <div className="inner_banner">
+          <img src={banner} alt="fb" />
         </div>
       </div>
     );
   };
+  // Sidebar = () => {
+  //   return (
+  //     <div className="sidebar">
+  //       <div className="sidebarContent">
+  //         <h4 style={{ color: "white" }}>Series</h4>
+  //         <button className="sidebarButtons">
+  //           <Link to="/construction/"> Star Panic: Richi</Link>
+  //         </button>
 
-  Footer = () => {
+  //         <button className="sidebarButtons">
+  //           <Link to="/rizerequia/"> Rize Requia</Link>
+  //         </button>
+  //       </div>
+
+  //       <div className="sidebarContent">
+  //         <h4 style={{ color: "white" }}>Affiliations</h4>
+  //         <button className="sidebarButtons" href="http://www.ableideaz.com/">
+  //           Able Ideaz
+  //         </button>
+  //         <button
+  //           className="sidebarButtons"
+  //           href="http://www.Instagram.com/kuribelle"
+  //         >
+  //           Instagram
+  //         </button>
+  //         <button className="sidebarButtons" href="http://www.ableideaz.com/">
+  //           Deviant Art
+  //         </button>
+  //         <button className="sidebarButtons" href="http://www.ableideaz.com/">
+  //           Twitter
+  //         </button>
+  //         <button className="sidebarButtons" href="http://www.ableideaz.com/">
+  //           Facebook
+  //         </button>
+  //       </div>
+  //     </div>
+  //   );
+  // };
+
+  footer = () => {
     return (
       <div className="footer">
-        <a href="https://www.facebook.com/cneconnect/">
-          <img src={this.getImageURL("facebook")} width="4%" alt="fb" />
-        </a>
-        <a href="https://twitter.com/TweetsCne">
-          <img src={this.getImageURL("twitter")} width="4%" alt="twitter" />
-        </a>
-        <a href="https://www.instagram.com/cneunity">
-          <img src={this.getImageURL("instagram")} width="4%" alt="instagram" />
-        </a>
-        <a href="https://www.deviantart.com/cne-deviant">
-          <img
-            src={this.getImageURL("deviantart")}
-            width="4%"
-            alt="deviantart"
-          />
-        </a>
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/cneconnect/">
+              <img src={this.getImageURL("facebook")} alt="fb" />
+            </a>
+          </li>
+
+          <li>
+            <a href="https://twitter.com/TweetsCne">
+              <img src={this.getImageURL("twitter")} alt="twitter" />
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/cneunity">
+              <img
+                src={this.getImageURL("instagram")}
+                width="4%"
+                alt="instagram"
+              />
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.facebook.com/cneconnect/">
+              <img src={this.getImageURL("facebook")} alt="fb" />
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.deviantart.com/cne-deviant">
+              <img src={this.getImageURL("deviantart")} alt="deviantart" />
+            </a>
+          </li>
+        </ul>
 
         <p>Copyright © 2019 by CRYSTAL NOVA ENTERTAINMENT.</p>
         <p>
@@ -154,15 +195,19 @@ class App extends Component {
     return (
       <Router>
         <div className="page">
-          {this.Header()}
-          {this.Nav()}
-          <div className="mainContent">
-            <Route path="/main/" component={Main} />
-            <Route path="/rizerequia/" component={Rize} />
-            <Route path="/construction/" component={Construction} />
+          {this.header()}
+          {this.banner()}
+          <div className="content">
+            <Route path="/" component={Main} />
           </div>
-          {this.Sidebar()}
-          {this.Footer()}
+          {/* {this.Nav()} */}
+          {/* <div className="mainContent"> */}
+          {/* <Route path="/" component={Main} /> */}
+          {/* <Route path="/rizerequia/" component={Rize} /> */}
+          {/* <Route path="/construction/" component={Construction} /> */}
+          {/* </div> */}
+          {/* {this.Sidebar()} */}
+          {this.footer()}
         </div>
       </Router>
     );
